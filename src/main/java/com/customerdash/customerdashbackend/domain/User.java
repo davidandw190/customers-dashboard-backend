@@ -20,12 +20,12 @@ import lombok.experimental.SuperBuilder;
 @JsonInclude(Include.NON_DEFAULT)
 public class User {
     @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     private String name;
     private String email;
     private String status;
     private String address;
     private String phone;
-    private String imageUrl;
+    private String image_url;
 
 }
