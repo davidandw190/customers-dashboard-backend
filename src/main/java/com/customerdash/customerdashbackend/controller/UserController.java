@@ -32,7 +32,7 @@ public class UserController {
                         .data(Map.of("page", userService.getUsers(name.orElse(""),
                                                                      page.orElse(0),
                                                                      size.orElse(10))))
-                        .message("Users retrieved!")
+                        .message("Users retrieved successfully!")
                         .status(HttpStatus.OK)
                         .statusCode(HttpStatus.OK.value())
                         .build());
